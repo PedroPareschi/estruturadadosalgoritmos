@@ -1,6 +1,6 @@
 package sort.exercicios;
 
-public class Exercicio2InsetionSort {
+public class Exercicio2InsertionSort {
 
     // Modifique o insetion sort para que utilize uma implementação recursiva
 

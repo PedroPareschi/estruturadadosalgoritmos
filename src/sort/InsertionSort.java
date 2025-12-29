@@ -2,7 +2,7 @@ package sort;
 
 import java.util.Arrays;
 
-public class InsetionSort {
+public class InsertionSort {
     // Divide-se o array em parte ordenada e não ordenada. O primeiro número da parte não ordenada volta as casas até
     // chegar na sua posição na parte ordenada
     // O(n^2)

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RadixSort {
 
-    // Dados devem ter mesma base e largura, devendo portanto compor somente de inteiros ou strings.
+    // Dados devem ter mesma base e largura, portanto, devem ser somente inteiros ou strings.
     // É uma ordenação baseada somente em caractere e strings, começando da posição mais a direita, usando um algoritmo
     // de ordenação estável para fazer a ordenação.
     // Estável e in place, dependendo do algoritmo utilizado.
