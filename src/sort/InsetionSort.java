@@ -3,7 +3,7 @@ package sort;
 import java.util.Arrays;
 
 public class InsetionSort {
-    // Divide-se o array em parte ordenada e não ordenada. O primeiro numero da parte não ordenada volta as casas até
+    // Divide-se o array em parte ordenada e não ordenada. O primeiro número da parte não ordenada volta as casas até
     // chegar na sua posição na parte ordenada
     // O(n^2)
     // Estável
