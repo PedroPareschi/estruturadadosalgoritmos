@@ -32,6 +32,24 @@ public class EmployeeDoublyLinkedList {
         size++;
     }
 
+    public void addBefore(Employee employee, int nextEmployeeId) {
+        EmployeeDoublyNode current = head;
+        while (current != null && current.getEmployee().id() != nextEmployeeId) {
+            current = current.getNext();
+        }
+        if (current != null) {
+            EmployeeDoublyNode newEmployee = new EmployeeDoublyNode(employee);
+            newEmployee.setNext(current);
+            if (current.getPrevious() != null) {
+                newEmployee.setPrevious(current.getPrevious());
+                current.getPrevious().setNext(newEmployee);
+            } else {
+                head = newEmployee;
+            }
+            current.setPrevious(newEmployee);
+        }
+    }
+
     public EmployeeDoublyNode removeFromFront() {
         if (isEmpty()) {
             return null;

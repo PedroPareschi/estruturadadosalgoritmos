@@ -16,21 +16,10 @@ public class DoublyLinkedLists {
         list.addToFront(ericCartman);
         list.addToFront(kennyMcCormick);
 
-        list.printList();
-        System.out.println(list.getSize());
-
         Employee buttersStotch = new Employee("Butters", "Stotch", 1213);
 
-        list.addToEnd(buttersStotch);
+        list.addBefore(buttersStotch, 1011);
+        list.printList();
 
-        list.printList();
-        System.out.println(list.getSize());
-        list.removeFromFront();
-        list.printList();
-        System.out.println(list.getSize());
-
-        list.removeFromEnd();
-        list.printList();
-        System.out.println(list.getSize());
     }
 }
