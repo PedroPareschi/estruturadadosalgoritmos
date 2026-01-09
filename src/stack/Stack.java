@@ -5,7 +5,8 @@ import utils.Employee;
 public class Stack {
 
     public static void main(String[] args) {
-        ArrayStack stack = new ArrayStack(10);
+//        ArrayStack stack = new ArrayStack(10);
+        LinkedStack stack = new LinkedStack();
         Employee stanMarsh = new Employee("Stan", "Marsh", 123);
         Employee kyleBroflovski = new Employee("Kyle", "Broflovski", 456);
         Employee ericCartman = new Employee("Eric", "Cartman", 789);
@@ -16,8 +17,12 @@ public class Stack {
         stack.push(kyleBroflovski);
         stack.push(stanMarsh);
 
+        stack.printStack();
+        System.out.println("=====================================");
         System.out.println(stack.pop());
-
+        System.out.println("=====================================");
+        stack.printStack();
+        System.out.println("=====================================");
         System.out.println(stack.peek());
     }
 }
