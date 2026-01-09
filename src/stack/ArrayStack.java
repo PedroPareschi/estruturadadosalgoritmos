@@ -16,9 +16,7 @@ public class ArrayStack {
     public void push(Employee employee) {
         if (top == stack.length) {
             // precisa aumentar o tamanho do array
-            Employee[] newArray = new Employee[2 * stack.length];
-            System.arraycopy(stack, 0, newArray, 0, stack.length);
-            stack = newArray;
+            stack = Arrays.copyOf(stack, stack.length * 2);
         }
         stack[top++] = employee;
     }

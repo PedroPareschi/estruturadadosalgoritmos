@@ -1,7 +1,6 @@
 package stack;
 
 import java.util.LinkedList;
-import java.util.List;
 
 public class ExercicioStack {
 
