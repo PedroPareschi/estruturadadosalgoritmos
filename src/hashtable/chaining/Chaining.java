@@ -1,8 +1,8 @@
-package hashtable;
+package hashtable.chaining;
 
 import utils.Employee;
 
-public class HashTable {
+public class Chaining {
 
     public static void main(String[] args) {
         Employee stanMarsh = new Employee("Stan", "Marsh", 123);
@@ -11,7 +11,7 @@ public class HashTable {
         Employee kennyMcCormick = new Employee("Kenny", "McCormick", 1011);
         Employee tolkienBlack = new Employee("Tolkien", "Black", 1213);
 
-        SimpleHashTable hashTable = new SimpleHashTable();
+        ChainedHashTable hashTable = new ChainedHashTable();
         hashTable.put("Marsh", stanMarsh);
         hashTable.put("Broflovski", kyleBroflovski);
         hashTable.put("Cartman", ericCartman);
@@ -19,9 +19,8 @@ public class HashTable {
         hashTable.put("Black", tolkienBlack);
 
 
-        hashTable.remove("Marsh");
+//        hashTable.remove("Marsh");
 
         hashTable.printHashTable();
-
     }
 }

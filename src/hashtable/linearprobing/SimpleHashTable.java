@@ -1,8 +1,6 @@
-package hashtable;
+package hashtable.linearprobing;
 
 import utils.Employee;
-
-import java.util.Arrays;
 
 public class SimpleHashTable {
     private StoredEmployee[] hashTable;

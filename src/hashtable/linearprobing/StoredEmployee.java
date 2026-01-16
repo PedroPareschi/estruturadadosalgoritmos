@@ -1,4 +1,4 @@
-package hashtable;
+package hashtable.linearprobing;
 
 import utils.Employee;
 
